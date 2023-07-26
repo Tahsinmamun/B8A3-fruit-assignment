@@ -13,10 +13,9 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        .font-lato{
+        .font-lato {
             font-family: 'Lato', sans-serif;
         }
-
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -36,9 +35,12 @@
 <body class="font-lato">
 
     <header>
+
+        <!-- navbar section -->
         <nav class="max-w-screen-xl mx-auto my-10 bg-clr rounded-full">
             <div class="navbar sm:flex-col sm:space-y-6 md:flex-row lg:flex-row ">
-                <div class="flex-1 md:flex-col lg:flex-row  justify-center items-center gap-5 text-sm font-medium text-white">
+                <div
+                    class="flex-1 md:flex-col lg:flex-row  justify-center items-center gap-5 text-sm font-medium text-white">
                     <p class="font-sans">Home</p>
                     <p>About Us</p>
                     <p>Shop</p>
@@ -65,10 +67,104 @@
                 </div>
 
             </div>
-           
+
 
 
         </nav>
+
+
+        <!-- carousel section -->
+        <section class="max-w-screen-xl mx-auto my-15">
+            <div class="carousel w-full">
+                <!-- slide 1 -->
+                <div id="slide1" class="carousel-item relative w-full rounded-lg">
+                    <div class="hero  min-h-screen" style="background-image: url('./images/banner1.png');">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div> <a href="#slide4" class="btn btn-circle rounded-full text-white bg-black border-0">❮</a></div>
+
+                            <div class="max-w-md">
+                                <h1 class="mb-5 text-5xl font-extrabold">Exotic tastes at your <br>doorstep</h1>
+                                <p class="mb-5 text-[#FFF] font-medium text-lg">We supply highly quality organic
+                                    products</p>
+                                <button class="btn bg-clr border-0 font-extrabold text-xl">Shop Now</button>
+                            </div>
+                            <div><a href="#slide2" class="btn btn-circle text-white bg-black border-0">❯</a></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- slide 2 -->
+
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="hero min-h-screen " style="background-image: url('./images/banner2.png');">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div><a href="#slide1" class="btn btn-circle text-white bg-black border-0">❮</a></div>
+                            <div class="max-w-md">
+                                <h1 class="mb-5 text-5xl font-extrabold">Exotic tastes at your <br>doorstep</h1>
+                                <p class="mb-5 text-[#FFF] font-medium text-lg">We supply highly quality organic
+                                    products
+                                </p>
+                                <button class="btn bg-clr border-0 font-extrabold text-xl">Shop Now</button>
+                            </div>
+                            <div><a href="#slide3" class="btn btn-circle text-white bg-black border-0">❯</a></div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+
+                <!-- slide 3 -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="hero min-h-screen " style="background-image: url('./images/banner3.png');">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div> <a href="#slide2" class="btn btn-circle text-white bg-black border-0">❮</a></div>
+                            <div class="max-w-md">
+                                <h1 class="mb-5 text-5xl font-extrabold">Exotic tastes at your <br>doorstep</h1>
+                                <p class="mb-5 text-[#FFF] font-medium text-lg">We supply highly quality organic
+                                    products
+                                </p>
+                                <button class="btn bg-clr border-0 font-extrabold text-xl">Shop Now</button>
+                            </div>
+                            <div><a href="#slide4" class="btn btn-circle text-white bg-black border-0">❯</a></div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+
+                <!-- slide 4 -->
+
+                <div id="slide4" class="carousel-item relative w-full">
+                    <div class="hero min-h-screen" style="background-image: url('./images/banner4.png');">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div><a href="#slide3" class="btn btn-circle text-white bg-black border-0">❮</a></div>
+                            <div class="max-w-md">
+                                <h1 class="mb-5 text-5xl font-extrabold">Exotic tastes at your <br>doorstep</h1>
+                                <p class="mb-5 text-[#FFF] font-medium text-lg">We supply highly quality organic
+                                    products
+                                </p>
+                                <button class="btn bg-clr border-0 font-extrabold text-xl">Shop Now</button>
+                            </div>
+                            <div><a href="#slide1" class="btn btn-circle text-white bg-black border-0">❯</a></div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+
+
+
+
+
+            </div>
+
+        </section>
 
     </header>
 
