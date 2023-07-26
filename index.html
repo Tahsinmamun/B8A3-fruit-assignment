@@ -6,12 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Assignment</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .font-lato{
+            font-family: 'Lato', sans-serif;
+        }
+
+    </style>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        clr: '#F85559',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
-<body>
+<body class="font-lato">
 
     <header>
+        <nav class="max-w-screen-xl mx-auto my-10 bg-clr rounded-full">
+            <div class="navbar sm:flex-col sm:space-y-6 md:flex-row lg:flex-row ">
+                <div class="flex-1 md:flex-col lg:flex-row  justify-center items-center gap-5 text-sm font-medium text-white">
+                    <p class="font-sans">Home</p>
+                    <p>About Us</p>
+                    <p>Shop</p>
+                    <p>All Fruits</p>
+                </div>
+
+                <div class="flex-1 px-4 gap-4 font-bold text-4xl text-white justify-center items-center mb-10">
+                    <img src="./images/logo.png" alt="">
+                    <h2>Fruit Burst</h2>
+
+                </div>
+                <div class="flex-1 flex-row justify-center   items-center  ">
+                    <div>
+                        <input type="text" placeholder="Search" class="input input-bordered rounded-full md:w-auto" />
+                    </div>
+
+                    <div class="ml-3">
+                        <i class="fa-solid fa-magnifying-glass text-xl text-black"></i>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+
+                </div>
+
+            </div>
+           
+
+
+        </nav>
 
     </header>
 
@@ -20,9 +77,9 @@
     </main>
 
     <footer>
-        
+
     </footer>
-    
+
 
 </body>
 
