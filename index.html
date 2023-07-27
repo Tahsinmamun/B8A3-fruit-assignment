@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Assignment</title>
+    <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,10 +38,10 @@
     <header>
 
         <!-- navbar section -->
-        <nav class="max-w-screen-xl mx-auto my-10 bg-clr rounded-full">
+        <nav class="max-w-screen-xl mx-auto my-10 bg-clr rounded-full px-5 md:px-8">
             <div class="navbar sm:flex-col sm:space-y-6 md:flex-row lg:flex-row ">
                 <div
-                    class="flex-1 md:flex-col lg:flex-row  justify-center items-center gap-5 text-sm font-medium text-white">
+                    class=" nav-list flex-1 md:flex-col lg:flex-row  justify-center items-center gap-5 text-sm font-medium text-white">
                     <p class="font-sans">Home</p>
                     <p>About Us</p>
                     <p>Shop</p>
@@ -74,14 +75,15 @@
 
 
         <!-- carousel section -->
-        <section class="max-w-screen-xl mx-auto my-15">
+        <section class="max-w-screen-xl  mx-auto my-15">
             <div class="carousel w-full">
                 <!-- slide 1 -->
                 <div id="slide1" class="carousel-item relative w-full rounded-lg">
-                    <div class="hero  min-h-screen" style="background-image: url('./images/banner1.png');">
+                    <div class="hero  " style="background-image: url('./images/banner1.png');">
                         <div class="hero-overlay bg-opacity-60"></div>
                         <div class="hero-content text-center text-neutral-content">
-                            <div> <a href="#slide4" class="btn btn-circle rounded-full text-white bg-black border-0">❮</a></div>
+                            <div> <a href="#slide4"
+                                    class="btn btn-circle rounded-full text-white bg-black border-0">❮</a></div>
 
                             <div class="max-w-md">
                                 <h1 class="mb-5 text-5xl font-extrabold">Exotic tastes at your <br>doorstep</h1>
@@ -111,8 +113,8 @@
                             <div><a href="#slide3" class="btn btn-circle text-white bg-black border-0">❯</a></div>
                         </div>
                     </div>
-                    
-                    
+
+
                 </div>
 
                 <!-- slide 3 -->
@@ -131,8 +133,8 @@
                             <div><a href="#slide4" class="btn btn-circle text-white bg-black border-0">❯</a></div>
                         </div>
                     </div>
-                    
-                    
+
+
                 </div>
 
                 <!-- slide 4 -->
@@ -152,23 +154,230 @@
                             <div><a href="#slide1" class="btn btn-circle text-white bg-black border-0">❯</a></div>
                         </div>
                     </div>
-                    
-                    
+
+
                 </div>
             </div>
 
 
+        </section>
+
+        <!-- food catagory -->
 
 
+
+        <!-- strawberry section -->
+
+        <section class="max-w-6xl	transform -translate-y-11 mx-auto ">
+            <div
+                class="w-6xl  mx-auto md:p-20  bg-cyan-950 md:h-40 md:bg-white md:rounded-lg sm:hidden md:flex  md:justify-between md:items-center    ">
+
+                <div><img src="./images/fruit1.png" class="md:w-36 md:h-28" alt=""></div>
+                <div><img src="./images/fruit2.png" class="md:w-36 md:h-28" alt=""></div>
+                <div><img src="./images/fruit3.png" class="md:w-36 md:h-28" alt=""></div>
+                <div><img src="./images/fruit4.png" class="md:w-36 md:h-28" alt=""></div>
+                <div><img src="./images/fruit5.png" class="md:w-36 md:h-28" alt=""></div>
 
 
             </div>
+
 
         </section>
 
     </header>
 
     <main>
+
+        <!-- deal section -->
+        <section class="max-w-screen-xl  mx-auto my-20 h-10 bg-white flex justify-between items-center">
+            <div class="flex-1 space-y-6  px-7">
+                <h2 class="text-[#121212] font-extrabold text-5xl">Deal of the day</h2>
+                <p>Contrary to popular belief, is not simply random text. It has roots in a piece of <br> classical
+                    Latin literature from 45 BC, making it over 2000 years old.</p>
+
+            </div>
+            <div class="  justify-end">
+                <div class="justify-end">
+                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:15;"></span>
+                            </span>
+                            days
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:10;"></span>
+                            </span>
+                            hours
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:24;"></span>
+                            </span>
+                            min
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:36;"></span>
+                            </span>
+                            sec
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- price section
+         -->
+
+        <section class="max-w-screen-xl  mx-auto my-15 border  h-15">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+
+                <div>
+                    <div class="card  bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10">
+                            <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center space-y-4">
+                            <h2 class="card-title">12.90$ - 18.85$</h2>
+                            <p>Apples</p>
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr" />
+                            </div>
+
+                            <button class="text-clr text-xl">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card  bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10">
+                            <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center space-y-4">
+                            <h2 class="card-title">12.90$ - 18.85$</h2>
+                            <p>Apples</p>
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr" />
+                            </div>
+
+                            <button class="text-clr text-xl">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card  bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10">
+                            <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center space-y-4">
+                            <h2 class="card-title">12.90$ - 18.85$</h2>
+                            <p>Apples</p>
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr" />
+                            </div>
+
+                            <button class="text-clr text-xl">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card  bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10">
+                            <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center space-y-4">
+                            <h2 class="card-title">12.90$ - 18.85$</h2>
+                            <p>Apples</p>
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr checked" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr" />
+                            </div>
+
+                            <button class="text-clr text-xl">Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <div class="flex justify-center items-center my-10">
+            <button class="text-white bg-clr w-40 h-10 rounded-lg  text-center">Shop All</button>
+        </div>
+
+        <!-- team section -->
+        <section class="max-w-screen-xl  mx-auto my-15">
+
+            <div class="hero min-h-screen" style="background-image: url('./images/banner1.png');">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-md">
+                        <h1 class="mb-5 text-4xl font-bold">Meet the team section</h1>
+                        <p class="mb-5 text-sm">Contrary to popular belief, is not simply random text. It has roots in a
+                            piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                        <div>
+
+
+                <div class=" max-w-screen-sm grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div class=" space-y-4">
+                        <img src="./images/member1.png" alt="">
+                        <h2 class="text-lg inline w-full">Awlad Hossain</h2>
+                        <p class="text-xs">Fruits Expert</p>
+                        <div class="flex gap-2 justify-center">
+                            <i class="fa-brands rounded-lg bg-pink-600 fa-facebook"></i>
+                            <i class="fa-brands fa-instagram rounded-lg bg-pink-600"></i>
+                            <i class="fa-brands fa-linkedin-in rounded-lg pink-600"></i>
+                        </div>
+                    </div>
+                    <div class=" space-y-4">
+                        <img src="./images/member2.png" alt="">
+                        <h2 class="text-lg inline w-full">Awlad Hossain</h2>
+                        <p class="text-xs">Fruits Expert</p>
+                        <div class="flex gap-2 justify-center">
+                            <i class="fa-brands rounded-lg bg-pink-600 fa-facebook"></i>
+                            <i class="fa-brands fa-instagram rounded-lg bg-pink-600"></i>
+                            <i class="fa-brands fa-linkedin-in rounded-lg pink-600"></i>
+                        </div>
+                    </div>
+                    <div class=" space-y-4">
+                        <img src="./images/member3.png" alt="">
+                        <h2 class="text-lg inline w-full">Awlad Hossain</h2>
+                        <p class="text-xs">Fruits Expert</p>
+                        <div class="flex gap-2 justify-center">
+                            <i class="fa-brands rounded-lg bg-pink-600 fa-facebook"></i>
+                            <i class="fa-brands fa-instagram rounded-lg bg-pink-600"></i>
+                            <i class="fa-brands fa-linkedin-in rounded-lg pink-600"></i>
+                        </div>
+                    </div>
+                    
+                    
+
+                </div>    
+
+                        </div>
+                    </div>
+
+        </section>
+
 
     </main>
 
